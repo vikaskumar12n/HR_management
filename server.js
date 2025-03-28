@@ -25,5 +25,5 @@ app.use("/api/attendance", attendanceRoutes);
 app.use(errorHandler);
 
 app.use("/api/auth", authRoutes);
-const PORT =  5000;
+const PORT =  5010;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
