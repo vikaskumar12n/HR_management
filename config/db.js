@@ -3,11 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      "mongodb+srv://HR_management:pHt4DicC4bMCjKoY@cluster0.mongodb.net/hrms?retryWrites=true&w=majority",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
+      "mongodb+srv://HR_management:pHt4DicC4bMCjKoY@cluster0.mongodb.net/hrms"
     );
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
